@@ -155,21 +155,21 @@ h2 {
 }
 .last_page .eggMessage img {
 	display: inline-block;
-	width: 290px;
+	width: 400px;
 	transform: rotate(-3deg);
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	animation: move 3s linear infinite;
 }
 
 /* Deco  */
 .egg {
 	width: 35px;
-    height: 45px;
-    background-color: white;
-    transform: skew(-5deg);
-    border-radius: 50%;
-    margin-left: 20px;
-
-    animation: move .5s ease-in-out infinite;
+  height: 45px;
+  background-color: white;
+  transform: skew(-5deg);
+  border-radius: 50%;
+  margin-left: 20px;
+  animation: move .5s ease-in-out infinite;
 }
 
 .noEffect {
@@ -181,15 +181,16 @@ h2 {
 /* Anims  */
 @keyframes move {
   0% {
-  	transform: rotate(0);
-    left: 0;
+    transform: rotate(0deg);
   }
-  50% {
+  25% {
     transform: rotate(10deg);
   }
-  100% {
-    left: calc(100% - 50px);
+  75% {
     transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
