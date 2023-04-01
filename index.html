@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>La chasse aux trésors de Livia - Page 1</title>
+		<link rel="stylesheet" href="assets/treasure_hunt.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+  		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Indie+Flower&display=swap" rel="stylesheet">
+  		<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<h1>La chasse aux trésors de Livia</h1>
+		</header>
+
+		<main>
+			<h1>1er mot à trouver</h1>
+			<p>
+				<strong class="highlighted">Bonjour Mlle. Livia Babch !</strong><br/>
+				Bienvenue dans cette chasse aux trésors de Pâques, qui commence dans ta chambre.<br/>
+				Durant cette aventure, tu vas pouvoir, évidemment, trouver des chocolats,
+				mais surtout tu vas aussi pouvoir trouver des indices qui vont te permettre de découvrir <span class="highlighted">une super surprise !</span>
+			</p/>
+			<p>
+				ATTENTION : Retiens bien tous les mots que tu vas trouver pendant les énigmes !<br/>
+				Ils te seront utiles pour la dernière étape.
+			</p>
+			<p class="enigmaRoom">	
+				Et vu que je suis sûr que tu es impatiente d'en savoir plus, <br/>
+				commence par chercher dans ta chambre pour trouver l'oeuf magique.
+			</p>
+
+			<div class="eggCtnr">
+				<button class="eggBtn">
+					<span>
+						Tu as trouvé le 1er oeuf ?<br/>
+						Alors clique sur ce bouton
+					</span>
+					<div class="egg"></div>
+				</button>
+
+				<div class="eggMessage hidden">
+					<p class="eggMessage-desc">
+						Regarde dans ton oeuf. Il devrait contenir un chocolat <strong class="highlighted">et une énigme</strong>.
+						<br/>Tu n'es pas obligée de manger le chocolat tout de suite !<br/>
+						Par contre, pour passer à l'étape suivante, tu vas devoir répondre à l'énigme ici :
+					</p>
+					
+					<p class="inputCtnr">
+						<input class="answerInput" type="text">
+						<button class="answerBtn" data-answer="une" data-target="page2.html">
+							C'est ta réponse ?<br/>
+							Alors clique ici
+						</button>
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
+<script src="assets/treasure_hunt.js"></script>
