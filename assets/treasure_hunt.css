@@ -82,14 +82,14 @@ button:hover {
 }
 
 /* Titles  */
-h1 {
+h1, h2 {
 	font-family: 'Baloo Bhaijaan', cursive;
 	font-size: 35px;
 	margin: 0;
 	color: black;
 	/*color: #ff99cc;*/
 }
-h2 {
+h3 {
 	font-size: 36px;
 	color: #ff99cc;
 	margin: 0 0 20px 0;
@@ -151,7 +151,7 @@ h2 {
 }
 
 /* Last plage  */
-.last_page h1 {
+.last_page h2 {
 	font-size: 44px;
 }
 .last_page .eggMessage {
