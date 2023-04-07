@@ -7,9 +7,16 @@ if (eggCtnrArray) {
 		const answerInput = eggCtnr.querySelector(".answerInput");
 		const answerBtn = eggCtnr.querySelector(".answerBtn");
 		const eggWarning = eggCtnr.querySelector(".eggCtnr-warning");
+		const photosBtn = eggCtnr.querySelector(".photosBtn");
 
 		// Egg button
 		eggBtn.addEventListener("click", () => {
+			if (eggBtn.getAttribute("id") === "imgBtn") {
+				setTimeout(function() {
+					photosBtn.classList.remove("hidden");
+					photosBtn.scrollIntoView({ behavior: 'smooth' });
+				}, 30000);
+			}
 			if (eggMessage.classList.contains("hidden")) {
 				eggMessage.classList.remove("hidden");
 				eggMessage.classList.add("displayed");
