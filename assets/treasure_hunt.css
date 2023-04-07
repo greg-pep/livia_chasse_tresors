@@ -30,6 +30,15 @@ header h1 {
 	color: white;
 	clip-path: polygon(0 0, calc(100% - 50px) 0, 100% 70px, 100% 100%, 0 100%);
 }
+header h1 a {
+	color: white;
+	text-decoration: none;
+	position: relative;
+	z-index: 50;
+}
+header h1 a:hover {
+	cursor: pointer;
+}
 
 /* Buttons */
 button,
